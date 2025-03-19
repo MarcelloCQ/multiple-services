@@ -1,0 +1,33 @@
+.data-entry-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.data-entry {
+  width: 90%;
+  padding: 20px;
+  min-height: 200px;
+  border-radius: 15px;
+  background-color: var(--bg-gray);
+  color: var(--bg-black);
+}
+
+.data-entry-btn {
+  position: absolute;
+  top: 0;
+  right: 3%;
+  background-color: var(--btn-bg-primary);
+  border-radius: 8px;
+  border: solid 1px #000000;
+  color: var(--text-white);
+  padding: 10px;
+  cursor: pointer;
+  transition: text-shadow 0.3s ease;
+}
+
+.data-entry-btn:hover {
+  text-shadow: 0 0 8px #ffffff, 0 0 12px #ffffff;
+}

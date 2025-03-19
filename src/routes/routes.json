@@ -1,0 +1,10 @@
+{
+  "/": {
+    "title": "Inicio",
+    "description": "Bienvenido a la página de inicio"
+  },
+  "/excel-converter": {
+    "title": "Conversor de Excel a JSON",
+    "description": "Selecciona el tipo de dato que ingresarás y el tipo de dato de salida"
+  }
+}

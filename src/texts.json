@@ -1,0 +1,10 @@
+{
+  "/home": {
+    "title": "Bienvenido Marcello, un nuevo día, un nuevo café para tomar en la oficina",
+    "description": "Por ahora solo está el conversor de excel a json. Con fé este fin de semana implementas el redimensionador de imágenes"
+  },
+  "/excel-converter": {
+    "title": "Conversor de Excel a JSON",
+    "description": "Arrastra el excel que deseas convertir a JSON"
+  }
+}

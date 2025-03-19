@@ -1,0 +1,68 @@
+.modal {
+  background-color: var(--bg-modal);
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-body {
+  width: 90%;
+  margin-top: 60px;
+  background-color: var(--bg-white);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-title {
+  width: 90%;
+  padding: 20px 0;
+  border-bottom: solid 2px var(--text-gray);
+  color: var(--text-black);
+}
+
+.modal-message {
+  width: 90%;
+  padding: 20px 0;
+  border-bottom: solid 2px var(--text-gray);
+  color: var(--text-black);
+}
+
+.modal-btn {
+  width: 90%;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.modal-btn .btn {
+  border-radius: 15px;
+  width: 100%;
+  max-width: 130px;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+
+.modal-btn .btn.btn-primary {
+  background-color: var(--btn-bg-primary);
+  color: var(--btn-color-primary);
+}
+
+.modal-btn .btn.btn-primary:hover {
+  filter: brightness(200%);
+}

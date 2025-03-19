@@ -1,0 +1,307 @@
+@import url('./reset.css');
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_18pt-BlackItalic.ttf') format('truetype');
+  font-weight: bolder;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_18pt-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_18pt-ExtraBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_18pt-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_18pt-ExtraLightItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_28pt-Medium.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_28pt-MediumItalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_28pt-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --bg-black: #222222;
+  --bg-gray: #afafaf;
+  --bg-modal: #111010ee;
+  --bg-white: #f0efef;
+  --bg-black-nav: #111111;
+  --text-white: #ffffff;
+  --text-gray: #cec9c9;
+  --border-bluedark: #010236;
+  --btn-bg-primary: #201f1f;
+  --btn-color-primary: #fffefe;
+  --text-black: #111111;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  background-color: var(--bg-black);
+  color: var(--text-white);
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.section {
+  margin: 20px;
+}
+
+.section--full {
+  width: 100%;
+}
+
+.section--sm {
+  width: 100%;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section--md {
+  width: 100%;
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section--lg {
+  width: 100%;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section--xl {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.m-1 {
+  margin: 20px;
+}
+
+.m-2 {
+  margin: 40px;
+}
+
+.m-3 {
+  margin: 60px;
+}
+
+.m-4 {
+  margin: 80px;
+}
+
+.m-5 {
+  margin: 100px;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-1 {
+  margin-top: 20px;
+}
+
+.mt-2 {
+  margin-top: 40px;
+}
+
+.mt-3 {
+  margin-top: 60px;
+}
+
+.mt-4 {
+  margin-top: 80px;
+}
+
+.mt-5 {
+  margin-top: 100px;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-1 {
+  margin-bottom: 20px;
+}
+
+.mb-2 {
+  margin-bottom: 40px;
+}
+
+.mb-3 {
+  margin-bottom: 60px;
+}
+
+.mb-4 {
+  margin-bottom: 80px;
+}
+
+.mb-5 {
+  margin-bottom: 100px;
+}
+
+.ml-0 {
+  margin-left: 0;
+}
+
+.ml-1 {
+  margin-left: 20px;
+}
+
+.ml-2 {
+  margin-left: 40px;
+}
+
+.ml-3 {
+  margin-left: 60px;
+}
+
+.ml-4 {
+  margin-left: 80px;
+}
+
+.ml-5 {
+  margin-left: 100px;
+}
+
+.mr-0 {
+  margin-right: 0;
+}
+
+.mr-1 {
+  margin-right: 20px;
+}
+
+.mr-2 {
+  margin-right: 40px;
+}
+
+.mr-3 {
+  margin-right: 60px;
+}
+
+.mr-4 {
+  margin-right: 80px;
+}
+
+.mr-5 {
+  margin-right: 100px;
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 26px;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  h4 {
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  h5 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .section {
+    margin: 30px;
+  }
+}
