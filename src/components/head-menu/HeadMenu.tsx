@@ -19,7 +19,12 @@ const HeadMenu = () => {
     <nav className='nav'>
       <div className='nav-desktop'>
         {routesArray.map((route, index) => (
-          <NavLink key={index} className='nav-link' to={route.path}>
+          <NavLink
+            key={index}
+            className='nav-link'
+            data-description={route.description}
+            to={route.path}
+          >
             {route.title}
           </NavLink>
         ))}
@@ -41,6 +46,7 @@ const HeadMenu = () => {
             <NavLink
               key={index}
               className='nav-link'
+              data-description={route.description}
               to={route.path}
               onClick={() => setMenu(false)}
             >
