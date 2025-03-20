@@ -1,3 +1,4 @@
+/* Reset básico para párrafos, títulos, subtítulos y inputs */
 html,
 body {
   margin: 0;
@@ -7,6 +8,7 @@ body {
   line-height: 1;
 }
 
+/* Reset de márgenes y padding para elementos comunes */
 h1,
 h2,
 h3,
@@ -20,6 +22,7 @@ p {
   font-weight: inherit;
 }
 
+/* Reset de estilos para listas */
 ol,
 ul {
   margin: 0;
@@ -27,11 +30,13 @@ ul {
   list-style: none;
 }
 
+/* Reset de estilos para enlaces */
 a {
   text-decoration: none;
   color: inherit;
 }
 
+/* Reset de estilos para formularios e inputs */
 input,
 textarea,
 button,
@@ -43,28 +48,17 @@ select {
   font-size: 100%;
   background: none;
   outline: none;
-  appearance: none;
+  appearance: none; /* Elimina estilos específicos del navegador */
 }
 
-input[type='number'] {
-  -webkit-appearance: textfield;
-  appearance: textfield;
-
-  -moz-appearance: textfield;
-}
-
-input[type='number']::-webkit-inner-spin-button,
-input[type='number']::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
+/* Reset de estilos para imágenes */
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
+/* Reset de estilos para tablas */
 table {
   border-collapse: collapse;
   border-spacing: 0;
