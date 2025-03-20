@@ -65,9 +65,13 @@
   --text-white: #ffffff;
   --text-gray: #cec9c9;
   --border-bluedark: #010236;
+  --border-black: #1b1b1b;
+  --border-white: #f7f1f1;
+  --border-gray: #bdb6b6d7;
   --btn-bg-primary: #201f1f;
   --btn-color-primary: #fffefe;
   --text-black: #111111;
+  --bg-input-gray: #afafafb7;
 }
 
 html {

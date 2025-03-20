@@ -17,6 +17,7 @@
 .modal-body {
   width: 90%;
   margin-top: 60px;
+  max-width: 450px;
   background-color: var(--bg-white);
   border-radius: 20px;
   display: flex;
