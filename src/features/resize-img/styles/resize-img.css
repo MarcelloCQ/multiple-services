@@ -1,0 +1,93 @@
+.form-img {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-file-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1em;
+}
+
+.input-file {
+  width: 80%;
+  max-width: 350px;
+  border-radius: 10px;
+  padding: 10px;
+  color: var(--text-black);
+  background-color: var(--border-gray);
+}
+
+.form-inputfile-btn-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 1em;
+}
+
+.image-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 4em;
+  margin-top: 40px;
+}
+
+.image-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
+  width: fit-content;
+  border: solid 1px var(--border-gray);
+  border-radius: 15px;
+  padding: 25px 15px;
+}
+
+.image {
+  max-width: 200px;
+}
+
+.size-controls {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.size-input {
+  border: solid 1px var(--border-gray);
+  border-radius: 8px;
+  padding: 10px;
+  color: var(--text-white);
+  background-color: var(--bg-gray);
+}
+
+.generate-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: var(--bg-gray);
+  color: var(--text-black);
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  transition: filter 0.4s ease;
+  transition: box-shadow 0.4s ease;
+}
+
+.generate-button:hover {
+  box-shadow: 0 0 10px var(--bg-gray);
+  filter: brightness(120%);
+}

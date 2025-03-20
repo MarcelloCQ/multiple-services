@@ -16,6 +16,55 @@ export const useDataEntry = () => {
     setShow(false);
   };
 
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    e.preventDefault();
+
+    const file = e.target.files;
+
+    if (file) {
+      if (!file[0].name.match(/\.(xlsx|xls)$/i)) {
+        setTitle('Ups!');
+        setMessage('Por favor, arrastra un archivo Excel válido.');
+        setShow(true);
+        return;
+      }
+
+      setFile(file[0].name);
+
+      const reader = new FileReader();
+
+      reader.onload = (e) => {
+        const data = e.target?.result;
+
+        if (data) {
+          const arrayBuffer = data as ArrayBuffer;
+
+          const workBook = XLSX.read(arrayBuffer, { type: 'array' });
+          const firstSheetName = workBook.SheetNames[0];
+          const worksheet = workBook.Sheets[firstSheetName];
+          const jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
+
+          const headers = jsonData[0] as ExcelHeader;
+          const rows = jsonData.slice(1) as ExcelRow[];
+
+          const jsonArray = rows.map((row: ExcelRow) => {
+            const obj: Record<string, string | number> = {};
+            headers.forEach((header: string, index: number) => {
+              obj[header] = row[index];
+            });
+            return obj;
+          });
+
+          const jsonString = JSON.stringify(jsonArray, null, 2);
+
+          setText(jsonString);
+        }
+      };
+
+      reader.readAsArrayBuffer(file[0]);
+    }
+  };
+
   const handleDrop = (e: React.DragEvent<HTMLTextAreaElement>) => {
     e.preventDefault();
 
@@ -93,6 +142,7 @@ export const useDataEntry = () => {
     handleDrop,
     handleDragOver,
     handleCopyText,
+    handleChange,
     title,
     message,
     handleCloseModal,
