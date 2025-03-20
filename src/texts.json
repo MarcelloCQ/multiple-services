@@ -1,14 +1,116 @@
 {
   "/home": {
     "title": "Desarrollo & Herramientas",
-    "description": "Conversor de excel y redimencionador de imágenes listo en fase beta. Ahora vamos por el generador de secciones para los html's."
+    "description": "Creando soluciones digitales y herramientas útiles para optimizar tu flujo de trabajo.",
+    "h2": "Herramientas",
+    "button1": "Conoce mis proyectos",
+    "button2": "Contáctame",
+    "herramientas": {
+      "conversor-xlsx-json": {
+        "title": "Conversor Excel a JSON",
+        "description": "Transforma tus hojas de cálculo a formato JSON con un solo clic. Optimiza tu flujo de trabajo de datos.",
+        "button1": "Usar herramienta"
+      },
+      "redimencionador-img": {
+        "title": "Redimensionador de Imágenes",
+        "description": "Ajusta el tamaño de tus imágenes de forma rápida y sencilla. Ideal para optimizar recursos web.",
+        "button1": "Usar herramienta"
+      }
+    },
+    "about-me": {
+      "title": "Sobre mí",
+      "description1": "Soy un desarrollador apasionado por crear soluciones que simplifiquen procesos y mejoren la experiencia digital. Me especializo en desarrollo web y creación de herramientas que optimizan flujos de trabajo. También tengo conocimientos de backend con distintos lenguajes, los cuales se detallan abajo.",
+      "description2": "Mi enfoque combina funcionalidad con diseño minimalista, creando interfaces intuitivas y eficientes. Las herramientas que desarrollo nacen de necesidades reales que he identificado en mi experiencia profesional.",
+      "stack": [
+        {
+          "stackid": 1,
+          "stackname": "JavaScript"
+        },
+        {
+          "stackid": 2,
+          "stackname": "React.js"
+        },
+        {
+          "stackid": 3,
+          "stackname": "Next.js"
+        },
+        {
+          "stackid": 4,
+          "stackname": "Node.js"
+        },
+        {
+          "stackid": 5,
+          "stackname": "UI/UX"
+        },
+        {
+          "stackid": 6,
+          "stackname": "TypeScript"
+        },
+        {
+          "stackid": 7,
+          "stackname": "Java"
+        },
+        {
+          "stackid": 8,
+          "stackname": "Spring"
+        },
+        {
+          "stackid": 9,
+          "stackname": "Linux"
+        }
+      ]
+    },
+    "projects": {
+      "title": "Proyectos destacados",
+      "projects": [
+        {
+          "idporject": 1,
+          "title": "Proyecto 1",
+          "description": "Descripción breve del proyecto y las tecnologías utilizadas para su desarrollo.",
+          "button1": "Ver detalles"
+        },
+        {
+          "idporject": 2,
+          "title": "Proyecto 2",
+          "description": "Descripción breve del proyecto y las tecnologías utilizadas para su desarrollo.",
+          "button1": "Ver detalles"
+        },
+        {
+          "idporject": 3,
+          "title": "Proyecto 3",
+          "description": "Descripción breve del proyecto y las tecnologías utilizadas para su desarrollo.",
+          "button1": "Ver detalles"
+        }
+      ]
+    },
+    "contact-me": {
+      "title": "Conectemos",
+      "description": "¿Tienes un proyecto en mente o quieres saber más sobre mis servicios? Estoy a un mensaje de distancia.",
+      "anchors": {
+        "mail": "mailto:giosuemc@gmail.com",
+        "github": "https://github.com/MarcelloCQ",
+        "linkedin": "https://www.linkedin.com/in/giosue-marcello-crescimbeni-queija-54a858112/"
+      },
+      "button1": "Enviar mensaje"
+    }
   },
   "/excel-converter": {
     "title": "Conversor de Excel a JSON",
-    "description": "Arrastra el excel que deseas convertir a JSON"
+    "description": "Arrastra el excel que deseas convertir a JSON",
+    "form": {
+      "label-input1": "Carga el excel aquí"
+    }
   },
   "/resize-img": {
     "title": "Redimencionador de imágenes",
     "description": "Selecciona las imágenes que quieres redimencionar, ingresa el ancho o alto en el input correspondiente y dale al botón redimencionar"
+  },
+  "footer": {
+    "rights": "2025 Marcello Crescimbeni. Todos los derechos reservados.",
+    "anchors": {
+      "inicio": "Inicio",
+      "excel-converter": "Excel a JSON",
+      "resize-img": "Redimensionador"
+    }
   }
 }
