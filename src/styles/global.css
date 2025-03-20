@@ -59,6 +59,7 @@
 :root {
   /* Colores de fondo */
   --bg-black: #000000;
+  --bg-black-alternative: #202020;
   --bg-gray: #afafaf;
   --bg-modal: #111010ee;
   --bg-white: #f0efef;
@@ -115,7 +116,7 @@ html {
 body {
   font-family: system-ui, "Inter", sans-serif;
   min-height: 100vh;
-  background-color: var(--gradient-bg-main);
+  background-color: var(--bg-black-alternative);
   color: var(--color-zinc-100);
 }
 
