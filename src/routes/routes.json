@@ -5,10 +5,6 @@
   },
   "/excel-converter": {
     "title": "Conversor de Excel a JSON",
-    "description": "Herramienta para convertir datos de excel a distintos formatos de salida"
-  },
-  "/resize-img": {
-    "title": "Redimencionador de imágenes",
-    "description": "Herramienta para redimencionar imágenes"
+    "description": "Herramientas para convertir datos de excel a distintos formatos de salida"
   }
 }

@@ -1,0 +1,65 @@
+[
+  {
+    "Fecha": 45653,
+    "Tarea": "Cambiar IP mcontact",
+    "Empresa": "Xiencias",
+    "Tiempo": 40,
+    "Unidad de medida": "minutos"
+  },
+  {
+    "Fecha": 45654,
+    "Tarea": "Cambiar IP mcontact",
+    "Empresa": "Xiencias",
+    "Tiempo": 40,
+    "Unidad de medida": "minutos"
+  },
+  {
+    "Fecha": 45664,
+    "Tarea": "Revisar problema para obtener teléfonos de clientes x DNI",
+    "Empresa": "Comunica7",
+    "Tiempo": 60,
+    "Unidad de medida": "minutos"
+  },
+  {
+    "Fecha": 45671,
+    "Tarea": "Ocultar cuentas con estado 0 (inactivas)",
+    "Empresa": "Comunica7",
+    "Tiempo": 312,
+    "Unidad de medida": "minutos"
+  },
+  {
+    "Fecha": 45672,
+    "Tarea": "Ocultar cuentas con estado 0 (inactivas)",
+    "Empresa": "Comunica7",
+    "Tiempo": 180,
+    "Unidad de medida": "minutos"
+  },
+  {
+    "Fecha": 45673,
+    "Tarea": "Ocultar cuentas con estado 0 (inactivas)",
+    "Empresa": "Comunica7",
+    "Tiempo": 360,
+    "Unidad de medida": "minutos"
+  },
+  {
+    "Fecha": 45674,
+    "Tarea": "Ocultar cuentas con estado 0 (inactivas)",
+    "Empresa": "Comunica7",
+    "Tiempo": 120,
+    "Unidad de medida": "minutos"
+  },
+  {
+    "Fecha": 45675,
+    "Tarea": "Ocultar cuentas con estado 0 (inactivas)",
+    "Empresa": "Comunica7",
+    "Tiempo": 150,
+    "Unidad de medida": "minutos"
+  },
+  {
+    "Fecha": 45676,
+    "Tarea": "Ocultar cuentas con estado 0 (inactivas)",
+    "Empresa": "Comunica7",
+    "Tiempo": 400,
+    "Unidad de medida": "minutos"
+  }
+]

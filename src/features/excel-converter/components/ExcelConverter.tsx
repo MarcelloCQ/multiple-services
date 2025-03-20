@@ -9,7 +9,6 @@ const ExcelConverter = () => {
     handleDragOver,
     handleCloseModal,
     handleCopyText,
-    handleChange,
     title,
     message,
     text,
@@ -24,18 +23,6 @@ const ExcelConverter = () => {
         <p className='text-center mb-1'>
           {texts['/excel-converter'].description}
         </p>
-
-        <div className='input-file-excel-container'>
-          <label htmlFor='upload-excel'>Carta el excel aquí</label>
-          <input
-            className='upload-excel'
-            id='upload-excel'
-            name='upload-excel'
-            type='file'
-            onChange={handleChange}
-          />
-        </div>
-
         <div className='data-entry-content'>
           <button
             type='button'

@@ -1,7 +1,6 @@
 import { createBrowserRouter } from 'react-router';
-import HomeFeature from '../features/home';
-import ExcelConverterFeature from '../features/excel-converter';
-import ResizeImgFeature from '../features/resize-img';
+import HomeFeature from './features/home';
+import ExcelConverterFeature from './features/excel-converter';
 
 const router = createBrowserRouter([
   {
@@ -11,10 +10,6 @@ const router = createBrowserRouter([
   {
     path: '/excel-converter',
     element: <ExcelConverterFeature />,
-  },
-  {
-    path: '/resize-img',
-    element: <ResizeImgFeature />,
   },
 ]);
 
