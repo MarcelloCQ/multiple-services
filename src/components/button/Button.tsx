@@ -2,13 +2,23 @@ import "./button.css";
 
 interface ButtonProps {
   textbutton: string;
-  classname: string;
+  classname?: string;
+  type?: "button" | "submit" | "reset";
   onClickFunction?: () => void;
 }
 
-const Button = ({ textbutton, classname, onClickFunction }: ButtonProps) => {
+const Button = ({
+  textbutton,
+  classname,
+  onClickFunction,
+  type,
+}: ButtonProps) => {
   return (
-    <button onClick={onClickFunction} className={`button ${classname}`}>
+    <button
+      type={type}
+      onClick={onClickFunction}
+      className={`button ${classname}`}
+    >
       {textbutton}
     </button>
   );

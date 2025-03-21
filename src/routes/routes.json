@@ -16,5 +16,11 @@
     "title": "Redimencionador de imágenes",
     "description": "Herramienta para redimencionar imágenes",
     "path": "/resize-img"
+  },
+  {
+    "routeId": 4,
+    "title": "Contacta conmigo",
+    "description": "Formulario para contactar conmigo",
+    "path": "/contact-form"
   }
 ]

@@ -1,7 +1,7 @@
-import Modal from '../../../components/modal/Modal';
-import texts from '../../../texts.json';
-import useImage from '../hooks/useImage';
-import './../styles/resize-img.css';
+import Modal from "../../../components/modal/Modal";
+import texts from "../../../texts.json";
+import useImage from "../hooks/useImage";
+import "./../styles/resize-img.css";
 
 const ResizeImg = () => {
   const {
@@ -16,24 +16,28 @@ const ResizeImg = () => {
   } = useImage();
 
   return (
-    <section className='hero-section'>
-      <div className='hero-overlay'></div>
-      <div className='section--xl mb-3 mt-3'>
-        <h1 className='text-center mb-1'>{texts['/resize-img'].title}</h1>
-        <p className='text-center mb-1'>{texts['/resize-img'].description}</p>
+    <section className="hero-section">
+      <div className="hero-overlay"></div>
+      <div className="section--xl">
+        <h1 className="section-title">
+          <span className="gradient-text">{texts["/resize-img"].title}</span>
+        </h1>
+        <p className="section-description">
+          {texts["/resize-img"].description}
+        </p>
 
-        <form className='form-img'>
-          <div className='form-inputfile-btn-container'>
-            <div className='input-file-container'>
-              <label htmlFor='input-file'>Imágenes</label>
+        <form className="form-img">
+          <div className="form-inputfile-btn-container">
+            <div className="input-file-container">
+              <label htmlFor="input-file">Imágenes</label>
               <input
-                id='input-file'
-                name='input-file'
-                className='input-file'
-                type='file'
+                id="input-file"
+                name="input-file"
+                className="input-file"
+                type="file"
                 multiple
                 onChange={handleImg}
-                accept='image/*'
+                accept="image/*"
               />
             </div>
 
@@ -42,28 +46,28 @@ const ResizeImg = () => {
             ) : (
               <button
                 onClick={handleGenerate}
-                type='button'
-                className='generate-button'
+                type="button"
+                className="generate-button"
               >
                 Generar
               </button>
             )}
           </div>
 
-          <div className='image-list'>
+          <div className="image-list">
             {images.map((image, index) => (
-              <div key={index} className='image-item'>
+              <div key={index} className="image-item">
                 <img
-                  className='image'
+                  className="image"
                   src={image.url}
                   alt={`Imagen ${index}`}
                 />
 
-                <div className='size-controls'>
+                <div className="size-controls">
                   <label>Ancho:</label>
                   <input
-                    className='size-input'
-                    type='number'
+                    className="size-input"
+                    type="number"
                     value={image.width}
                     onChange={(e) =>
                       updateImageSize(
@@ -76,8 +80,8 @@ const ResizeImg = () => {
 
                   <label>Alto:</label>
                   <input
-                    type='number'
-                    className='size-input'
+                    type="number"
+                    className="size-input"
                     value={image.height}
                     onChange={(e) =>
                       updateImageSize(

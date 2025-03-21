@@ -108,7 +108,7 @@
   },
   "/resize-img": {
     "title": "Redimencionador de imágenes",
-    "description": "Selecciona las imágenes que quieres redimencionar, ingresa el ancho o alto en el input correspondiente y dale al botón redimencionar"
+    "description": "Selecciona las imágenes que quieres redimencionar, ingresa el ancho o alto en el input correspondiente y dale al botón 'Generar'"
   },
   "footer": {
     "rights": "Marcello Crescimbeni. Todos los derechos reservados.",
@@ -124,7 +124,21 @@
       {
         "anchorId": 3,
         "anchorText": "Redimensionador"
+      },
+      {
+        "anchorId": 4,
+        "anchorText": "Contacta conmigo"
       }
     ]
+  },
+  "/contact-form": {
+    "title": "Conectemos",
+    "description": "Llena tus datos y me pondré en contacto contigo a la brevedad",
+    "button1": "Enviar",
+    "labels": {
+      "name": "Nombre",
+      "email": "Correo",
+      "message": "Mensaje"
+    }
   }
 }
