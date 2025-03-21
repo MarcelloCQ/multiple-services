@@ -3,26 +3,10 @@ import Button from "../../../components/button/Button";
 import texts from "./../../../texts.json";
 import "./../styles/home.css";
 import routes from "../../../routes/routes.json";
-import { useEffect, useState } from "react";
+import useHome from "../hooks/useHome";
 
 const Home = () => {
-  const [opacity, setOpacity] = useState(1);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setOpacity(0);
-      } else {
-        setOpacity(1);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const { opacity } = useHome();
 
   return (
     <>
