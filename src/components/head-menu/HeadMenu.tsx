@@ -2,7 +2,6 @@ import { NavLink } from 'react-router';
 import './head-menu.css';
 import React, { useState } from 'react';
 import routes from '../../routes/routes.json';
-import { convertRoutesToArray } from '../../routes/routesUtils';
 
 const HeadMenu = () => {
   const [menu, setMenu] = useState(false);
@@ -13,14 +12,12 @@ const HeadMenu = () => {
     setMenu(!menu);
   };
 
-  const routesArray = convertRoutesToArray(routes);
-
   return (
     <nav className='nav'>
       <div className='nav-desktop'>
-        {routesArray.map((route, index) => (
+        {routes.map((route) => (
           <NavLink
-            key={index}
+            key={route.routeId}
             className='nav-link'
             data-description={route.description}
             to={route.path}
@@ -42,9 +39,9 @@ const HeadMenu = () => {
 
       {menu ? (
         <div className='nav-mobile'>
-          {routesArray.map((route, index) => (
+          {routes.map((route) => (
             <NavLink
-              key={index}
+              key={route.routeId}
               className='nav-link'
               data-description={route.description}
               to={route.path}

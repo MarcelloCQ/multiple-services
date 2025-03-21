@@ -1,12 +1,14 @@
+import Footer from '../../components/footer/Footer';
 import HeadMenu from '../../components/head-menu/HeadMenu';
 import Home from './components/Home';
-import './styles/index.css';
+import './styles/home.css';
 
 function HomeFeature() {
   return (
     <main className='main'>
       <HeadMenu />
       <Home />
+      <Footer />
     </main>
   );
 }
