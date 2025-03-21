@@ -66,19 +66,25 @@
         {
           "idporject": 1,
           "title": "Proyecto 1",
-          "description": "Descripción breve del proyecto y las tecnologías utilizadas para su desarrollo.",
+          "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores pariatur laborum reiciendis dolore,",
           "button1": "Ver detalles"
         },
         {
           "idporject": 2,
           "title": "Proyecto 2",
-          "description": "Descripción breve del proyecto y las tecnologías utilizadas para su desarrollo.",
+          "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores pariatur laborum reiciendis dolore,",
           "button1": "Ver detalles"
         },
         {
           "idporject": 3,
           "title": "Proyecto 3",
-          "description": "Descripción breve del proyecto y las tecnologías utilizadas para su desarrollo.",
+          "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores pariatur laborum reiciendis dolore,",
+          "button1": "Ver detalles"
+        },
+        {
+          "idporject": 4,
+          "title": "Proyecto 4",
+          "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores pariatur laborum reiciendis dolore,",
           "button1": "Ver detalles"
         }
       ]
@@ -106,11 +112,20 @@
     "description": "Selecciona las imágenes que quieres redimencionar, ingresa el ancho o alto en el input correspondiente y dale al botón redimencionar"
   },
   "footer": {
-    "rights": "2025 Marcello Crescimbeni. Todos los derechos reservados.",
-    "anchors": {
-      "inicio": "Inicio",
-      "excel-converter": "Excel a JSON",
-      "resize-img": "Redimensionador"
-    }
+    "rights": "Marcello Crescimbeni. Todos los derechos reservados.",
+    "anchors": [
+      {
+        "anchorId": 1,
+        "anchorText": "Inicio"
+      },
+      {
+        "anchorId": 2,
+        "anchorText": "Excel a JSON"
+      },
+      {
+        "anchorId": 3,
+        "anchorText": "Redimensionador"
+      }
+    ]
   }
 }

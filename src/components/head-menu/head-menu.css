@@ -38,6 +38,7 @@
 .nav-link {
   color: #5a4e4e;
   font-size: 14px;
+  text-align: end;
   transition: filter 0.3s ease;
   animation: glow 1s infinite alternate;
 }

@@ -16,8 +16,9 @@ const ResizeImg = () => {
   } = useImage();
 
   return (
-    <section className='section'>
-      <div className='section--xl'>
+    <section className='hero-section'>
+      <div className='hero-overlay'></div>
+      <div className='section--xl mb-3 mt-3'>
         <h1 className='text-center mb-1'>{texts['/resize-img'].title}</h1>
         <p className='text-center mb-1'>{texts['/resize-img'].description}</p>
 

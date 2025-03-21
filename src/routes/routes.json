@@ -1,17 +1,20 @@
-{
-  "/": {
+[
+  {
+    "routeId": 1,
     "title": "Inicio",
     "description": "Página de inicio",
     "path": "/"
   },
-  "/excel-converter": {
+  {
+    "routeId": 2,
     "title": "Conversor de Excel a JSON",
     "description": "Herramienta para convertir datos de excel a distintos formatos de salida",
     "path": "/excel-converter"
   },
-  "/resize-img": {
+  {
+    "routeId": 3,
     "title": "Redimencionador de imágenes",
     "description": "Herramienta para redimencionar imágenes",
     "path": "/resize-img"
   }
-}
+]

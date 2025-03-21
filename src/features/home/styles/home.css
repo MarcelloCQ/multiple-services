@@ -8,7 +8,7 @@
 /* Hero section */
 .hero-section {
   position: relative;
-  height: 92.8vh;
+  min-height: 92.8vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -120,7 +120,7 @@
 }
 
 .tool-card:hover::after {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   opacity: 1;
@@ -265,7 +265,7 @@
 }
 
 .project-card:hover::after {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   opacity: 1;

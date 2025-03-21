@@ -1,3 +1,4 @@
+import Footer from '../../components/footer/Footer';
 import HeadMenu from '../../components/head-menu/HeadMenu';
 import ResizeImg from './components/ResizeImg';
 
@@ -6,6 +7,7 @@ const ResizeImgFeature = () => {
     <main className='main'>
       <HeadMenu />
       <ResizeImg />
+      <Footer />
     </main>
   );
 };
