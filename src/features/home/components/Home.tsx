@@ -1,5 +1,4 @@
 import { NavLink } from "react-router";
-import Button from "../../../components/button/Button";
 import texts from "./../../../texts.json";
 import "./../styles/home.css";
 import routes from "../../../routes/routes.json";
@@ -289,10 +288,12 @@ const Home = () => {
             </a>
           </div>
 
-          <Button
-            textbutton={texts["/home"]["contact-me"].button1}
-            classname={"button-primary contact-button"}
-          />
+          <NavLink
+            to={routes[3].path}
+            className={"button button-primary contact-button"}
+          >
+            {texts["/home"]["contact-me"].button1}
+          </NavLink>
         </div>
       </section>
     </>

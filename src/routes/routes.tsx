@@ -3,6 +3,7 @@ import HomeFeature from "../features/home";
 import ExcelConverterFeature from "../features/excel-converter";
 import ResizeImgFeature from "../features/resize-img";
 import routes from "./routes.json";
+import ContactFormFeature from "../features/contact-form";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
   {
     path: routes[2].path,
     element: <ResizeImgFeature />,
+  },
+  {
+    path: routes[3].path,
+    element: <ContactFormFeature />,
   },
 ]);
 

@@ -20,9 +20,13 @@ const ExcelConverter = () => {
   return (
     <section className="hero-section">
       <div className="hero-overlay"></div>
-      <div className="section--xl mb-3 mt-3">
-        <h1 className="text-center mb-1">{texts["/excel-converter"].title}</h1>
-        <p className="text-center mb-1">
+      <div className="section--xl">
+        <h1 className="section-title">
+          <span className="gradient-text">
+            {texts["/excel-converter"].title}
+          </span>
+        </h1>
+        <p className="section-description">
           {texts["/excel-converter"].description}
         </p>
 
