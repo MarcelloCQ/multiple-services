@@ -37,7 +37,7 @@
 .data-entry-btn {
   position: absolute;
   top: 0;
-  right: 3%;
+  right: 5%;
   background-color: var(--btn-bg-primary);
   border-radius: 8px;
   border: solid 1px #000000;
