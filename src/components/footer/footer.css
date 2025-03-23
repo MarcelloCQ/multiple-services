@@ -12,7 +12,7 @@
 }
 
 .copyright {
-  color: var(--color-zinc-500);
+  color: var(--color-zinc-300);
   font-size: 0.875rem;
   margin-bottom: 1rem;
 }
@@ -24,7 +24,7 @@
 }
 
 .footer-link {
-  color: var(--color-zinc-500);
+  color: var(--color-zinc-300);
   font-size: 0.875rem;
   transition: color 0.2s ease;
 }
