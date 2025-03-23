@@ -1,0 +1,39 @@
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 100vh;
+}
+
+.bar {
+  width: 20px;
+  height: 60px;
+  background-color: var(--btn-color-primary);
+  animation: gelatin 1.2s infinite ease-in-out;
+}
+
+.bar1 {
+  animation-delay: 0s;
+}
+
+.bar2 {
+  animation-delay: 0.2s;
+}
+
+.bar3 {
+  animation-delay: 0.4s;
+}
+
+@keyframes gelatin {
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+  25% {
+    transform: scaleY(1.8);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
