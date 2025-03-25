@@ -3,24 +3,48 @@
     "routeId": 1,
     "title": "Inicio",
     "description": "Página de inicio",
-    "path": "/"
+    "path": "/",
+    "isPublic": true,
+    "seo": {
+      "priority": 1,
+      "changefreq": "weekly",
+      "lastmod": "2025-03-24"
+    }
   },
   {
     "routeId": 2,
     "title": "Conversor de Excel a JSON",
     "description": "Herramienta para convertir datos de excel a distintos formatos de salida",
-    "path": "/excel-converter"
+    "path": "/excel-converter",
+    "isPublic": true,
+    "seo": {
+      "priority": 0.7,
+      "changefreq": "yearly",
+      "lastmod": "2025-03-23"
+    }
   },
   {
     "routeId": 3,
     "title": "Redimencionador de imágenes",
     "description": "Herramienta para redimencionar imágenes",
-    "path": "/resize-img"
+    "path": "/resize-img",
+    "isPublic": true,
+    "seo": {
+      "priority": 0.7,
+      "changefreq": "yearly",
+      "lastmod": "2025-03-21"
+    }
   },
   {
     "routeId": 4,
     "title": "Contacta conmigo",
     "description": "Formulario para contactar conmigo",
-    "path": "/contact-form"
+    "path": "/contact-form",
+    "isPublic": true,
+    "seo": {
+      "priority": 0.5,
+      "changefreq": "never",
+      "lastmod": "2025-03-23"
+    }
   }
 ]
