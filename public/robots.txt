@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /private/
+Disallow: /src/
+Disallow: /node_modules/
+Allow: /
+Sitemap: https://multiple-services-765e6.web.app/sitemap.xml
