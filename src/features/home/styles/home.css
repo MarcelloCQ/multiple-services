@@ -119,8 +119,13 @@
   animation: neon-glow 0.5s ease-in-out infinite alternate;
 }
 
+.arrow {
+  width: 10px;
+  height: 10px;
+}
+
 .tool-card:hover::after {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   opacity: 1;
@@ -130,7 +135,7 @@
 
 .tool-card-content {
   position: relative;
-  padding: 1.5rem;
+  padding: 1rem;
   height: 100%;
   z-index: 1;
 }
@@ -145,8 +150,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 3rem;
-  height: 3rem;
+  width: 50px;
+  height: 50px;
   border-radius: 9999px;
   background-color: var(--color-zinc-800);
   margin-right: 1rem;
@@ -168,7 +173,13 @@
   color: var(--color-zinc-300);
   display: inline-flex;
   align-items: center;
+  gap: 0.5em;
   transition: color 0.2s ease;
+}
+
+.tool-img {
+  width: 24px;
+  height: 24px;
 }
 
 .tool-link:hover {
@@ -265,7 +276,7 @@
 }
 
 .project-card:hover::after {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   opacity: 1;
@@ -299,6 +310,7 @@
   align-items: center;
   font-size: 0.875rem;
   transition: color 0.2s ease;
+  gap: 0.5em;
 }
 
 .project-link:hover {
@@ -335,4 +347,17 @@
 .social-icon:hover {
   background-color: var(--color-zinc-800);
   color: var(--color-white);
+}
+
+.social-img {
+  width: 24px;
+  height: 24px;
+}
+
+.arrow-down {
+  color: white;
+  background-color: white;
+  width: 24px;
+  height: 24px;
+  z-index: 4;
 }
