@@ -29,29 +29,17 @@ export default function vitePluginSitemap(): PluginOption {
         (route) => route.isPublic !== false
       );
 
-      const sitemapContent = `
-<?xml version="1.0" encoding="UTF-8"?>
+      const sitemapContent = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  ${publicRoutes
-    .map(
-      (route) => `
-  <url>
+${publicRoutes.map(route => `  <url>
     <loc>https://multiple-services-765e6.web.app${route.path}</loc>
-    <lastmod>
-      ${route.seo?.lastmod || new Date().toISOString().split('T')[0]}
-    </lastmod>
-    ${
-      route.seo?.changefreq
-        ? `<changefreq>${route.seo.changefreq}</changefreq>`
-        : ''
-    }
+    <lastmod>${route.seo?.lastmod || new Date().toISOString().split('T')[0]}</lastmod>
+    ${route.seo?.changefreq ? `<changefreq>${route.seo.changefreq}</changefreq>` : ''}
     ${route.seo?.priority ? `<priority>${route.seo.priority}</priority>` : ''}
-  </url>`
-    )
-    .join('')}
+  </url>`).join('\n')}
 </urlset>`;
 
-      fs.writeFileSync('./dist/sitemap.xml', sitemapContent);
+      fs.writeFileSync('./dist/sitemap.xml', sitemapContent, {encoding: 'utf-8'});
       console.log('✅ sitemap.xml generado con TypeScript!');
     },
   };
