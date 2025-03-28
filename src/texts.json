@@ -24,39 +24,48 @@
       "stack": [
         {
           "stackid": 1,
-          "stackname": "JavaScript"
+          "stackname": "JavaScript",
+          "classname": "javascript"
         },
         {
           "stackid": 2,
-          "stackname": "React.js"
+          "stackname": "React.js",
+          "classname": "react"
         },
         {
           "stackid": 3,
-          "stackname": "Next.js"
+          "stackname": "Next.js",
+          "classname": "next"
         },
         {
           "stackid": 4,
-          "stackname": "Node.js"
+          "stackname": "Node.js",
+          "classname": "node"
         },
         {
           "stackid": 5,
-          "stackname": "UI/UX"
+          "stackname": "UI/UX",
+          "classname": "uiux"
         },
         {
           "stackid": 6,
-          "stackname": "TypeScript"
+          "stackname": "TypeScript",
+          "classname": "typescript"
         },
         {
           "stackid": 7,
-          "stackname": "Java"
+          "stackname": "Java",
+          "classname": "java"
         },
         {
           "stackid": 8,
-          "stackname": "Spring"
+          "stackname": "Spring",
+          "classname": "spring"
         },
         {
           "stackid": 9,
-          "stackname": "Linux"
+          "stackname": "Linux",
+          "classname": "linux"
         }
       ]
     },

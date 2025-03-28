@@ -151,7 +151,10 @@ const Home = () => {
             </p>
             <div className='skills-container'>
               {texts['/home']['about-me'].stack.map((element) => (
-                <span className='skill-tag' key={element.stackid}>
+                <span
+                  className={`skill-tag ${element.classname}`}
+                  key={element.stackid}
+                >
                   {element.stackname}
                 </span>
               ))}
@@ -160,7 +163,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className='section section-gray' id='projects-section'>
+      {/* <section className='section section-gray' id='projects-section'>
         <div className='container mt-3 mb-3'>
           <h2 className='section-title'>
             <span className='gradient-text'>
@@ -187,9 +190,9 @@ const Home = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className='section section-dark' id='contact-us-section'>
+      <section className='section section-gray' id='contact-us-section'>
         <div className='container mb-3 mt-3'>
           <h2 className='section-title'>
             <span className='gradient-text'>

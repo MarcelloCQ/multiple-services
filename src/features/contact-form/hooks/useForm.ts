@@ -1,16 +1,19 @@
-import React, { useState } from "react";
-import { transformData } from "./form.dto";
+import React, { useState } from 'react';
+import { transformData } from './form.dto';
+import { apiFormContact } from './api.services';
 
 const useForm = () => {
   const [show, setShow] = useState(false);
-  const [title, setTitle] = useState("");
-  const [modalMessage, setModalMessage] = useState("");
+  const [title, setTitle] = useState('');
+  const [modalMessage, setModalMessage] = useState('');
 
   const handleClose = () => {
     setShow(false);
   };
 
-  const formSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
+  const formSubmit = async (
+    e: React.FormEvent<HTMLFormElement>
+  ): Promise<void> => {
     e.preventDefault();
 
     const formData = new FormData(e.currentTarget);
@@ -18,14 +21,16 @@ const useForm = () => {
     try {
       const parseData = transformData(formData);
 
-      console.log("Datos del formulario válidos:", parseData);
+      const response = await apiFormContact(parseData);
+
+      console.log(response);
     } catch (error) {
       if (error instanceof Error) {
-        setTitle("Ups!");
+        setTitle('Ups!');
         setModalMessage(error.message);
         setShow(true);
       } else {
-        setTitle("Ups!");
+        setTitle('Ups!');
         setModalMessage(error as string);
         setShow(true);
       }

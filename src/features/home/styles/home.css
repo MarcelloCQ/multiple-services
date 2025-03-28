@@ -242,10 +242,11 @@
 .skill-tag {
   display: inline-block;
   padding: 0.25rem 0.75rem;
-  background-color: var(--color-zinc-800);
+  /* background-color: var(--color-zinc-800); */
+  /* color: var(--color-zinc-100); */
   border-radius: 9999px;
   font-size: 0.875rem;
-  color: var(--color-zinc-400);
+  font-weight: bold;
 }
 
 /* Projects Section */
@@ -338,14 +339,14 @@
   justify-content: center;
   width: 3rem;
   height: 3rem;
-  background-color: var(--color-zinc-900);
+  background-color: var(--color-zinc-800);
   border-radius: 9999px;
   color: var(--color-zinc-300);
   transition: all 0.2s ease;
 }
 
 .social-icon:hover {
-  background-color: var(--color-zinc-800);
+  background-color: var(--color-zinc-700);
   color: var(--color-white);
 }
 

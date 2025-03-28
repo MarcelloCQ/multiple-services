@@ -1,57 +1,57 @@
-@import url("./reset.css");
+@import url('./reset.css');
 
 @font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter_18pt-BlackItalic.ttf") format("truetype");
+  font-family: 'Inter';
+  src: url('../fonts/Inter_18pt-BlackItalic.ttf') format('truetype');
   font-weight: bolder;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter_18pt-BoldItalic.ttf") format("truetype");
+  font-family: 'Inter';
+  src: url('../fonts/Inter_18pt-BoldItalic.ttf') format('truetype');
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter_18pt-ExtraBold.ttf") format("truetype");
+  font-family: 'Inter';
+  src: url('../fonts/Inter_18pt-ExtraBold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter_18pt-ExtraBoldItalic.ttf") format("truetype");
+  font-family: 'Inter';
+  src: url('../fonts/Inter_18pt-ExtraBoldItalic.ttf') format('truetype');
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter_18pt-ExtraLightItalic.ttf") format("truetype");
+  font-family: 'Inter';
+  src: url('../fonts/Inter_18pt-ExtraLightItalic.ttf') format('truetype');
   font-weight: 100;
   font-style: oblique;
 }
 
 @font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter_28pt-Medium.ttf") format("truetype");
+  font-family: 'Inter';
+  src: url('../fonts/Inter_28pt-Medium.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter_28pt-MediumItalic.ttf") format("truetype");
+  font-family: 'Inter';
+  src: url('../fonts/Inter_28pt-MediumItalic.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter_28pt-Regular.ttf") format("truetype");
+  font-family: 'Inter';
+  src: url('../fonts/Inter_28pt-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
@@ -107,6 +107,42 @@
   --btn-bg-primary: #201f1f;
   --btn-color-primary: #fffefe;
   --bg-input-gray: #afafafb7;
+
+  /* javascript */
+  --bg-javascript: #f7de1ea9;
+  --text-javascript: #222222;
+
+  /* react */
+  --bg-react: #61dafbab;
+  --text-react: #20232a;
+
+  /* next */
+  --bg-next: #00000086;
+  --text-next: #ffffff;
+
+  /* node */
+  --bg-node: #33993393;
+  --text-node: #ffffff;
+
+  /* uiux */
+  --bg-uiux: #b63b9b96;
+  --text-uiux: #f7f1f1;
+
+  /* typescript */
+  --bg-typescript: #3179c69d;
+  --text-typescript: #ffffff;
+
+  /* java */
+  --bg-java: #e77000b4;
+  --text-java: #522020;
+
+  /* spring */
+  --bg-spring: #6db33f9d;
+  --text-spring: #343a40;
+
+  /* linux */
+  --bg-linux: linear-gradient(to bottom right, #00000094, #e77000b2);
+  --text-linux: #ffffff;
 }
 
 html {
@@ -114,8 +150,8 @@ html {
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: var(--color-zinc-100);
   background: var(--bg-black);
   line-height: 1.6;
@@ -373,6 +409,51 @@ p {
 
 .mr-5 {
   margin-right: 100px;
+}
+
+.javascript {
+  color: var(--text-javascript);
+  background-color: var(--bg-javascript);
+}
+
+.react {
+  color: var(--text-react);
+  background-color: var(--bg-react);
+}
+
+.next {
+  color: var(--text-next);
+  background-color: var(--bg-next);
+}
+
+.node {
+  color: var(--text-node);
+  background-color: var(--bg-node);
+}
+
+.uiux {
+  color: var(--text-uiux);
+  background-color: var(--bg-uiux);
+}
+
+.typescript {
+  color: var(--text-typescript);
+  background-color: var(--bg-typescript);
+}
+
+.java {
+  color: var(--text-java);
+  background-color: var(--bg-java);
+}
+
+.spring {
+  color: var(--text-spring);
+  background-color: var(--bg-spring);
+}
+
+.linux {
+  color: var(--text-linux);
+  background: var(--bg-linux);
 }
 
 @media (min-width: 992px) {
