@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { transformData } from './form.dto';
-import { apiFormContact } from './api.services';
+// import { apiFormContact } from './api.services';
 
 const useForm = () => {
   const [show, setShow] = useState(false);
@@ -21,9 +21,9 @@ const useForm = () => {
     try {
       const parseData = transformData(formData);
 
-      const response = await apiFormContact(parseData);
+      // const response = await apiFormContact(parseData);
 
-      console.log(response);
+      console.log(parseData);
     } catch (error) {
       if (error instanceof Error) {
         setTitle('Ups!');
