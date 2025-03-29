@@ -1,11 +1,20 @@
 import Button from '../../../components/button/Button';
+import Miniloader from '../../../components/loader/Miniloader';
 import Modal from '../../../components/modal/Modal';
 import useForm from '../hooks/useForm';
 import texts from './../../../texts.json';
 import './../styles/contact-form.css';
 
 const ContactForm = () => {
-  const { formSubmit, handleClose, modalMessage, show, title } = useForm();
+  const {
+    formSubmit,
+    handleClose,
+    modalMessage,
+    show,
+    title,
+    formSend,
+    btnLoader,
+  } = useForm();
   return (
     <section className='hero-section'>
       <div className='hero-overlay'></div>
@@ -17,49 +26,63 @@ const ContactForm = () => {
           {texts['/contact-form'].description}
         </p>
         <div className='content-row'>
-          <form className='contact-form' onSubmit={formSubmit}>
-            <div className='input-container'>
-              <label htmlFor='name'>{texts['/contact-form'].labels.name}</label>
-              <input
-                className='input input-contact'
-                type='text'
-                name='name'
-                id='name'
-                required
-              />
-            </div>
+          {formSend ? (
+            <h3 className='text-center mt-3'>
+              <span className='section-description'>
+                {texts['/contact-form']['text-form-succed']}
+              </span>
+            </h3>
+          ) : (
+            <form className='contact-form' onSubmit={formSubmit}>
+              <div className='input-container'>
+                <label htmlFor='name'>
+                  {texts['/contact-form'].labels.name}
+                </label>
+                <input
+                  className='input input-contact'
+                  type='text'
+                  name='name'
+                  id='name'
+                  required
+                />
+              </div>
 
-            <div className='input-container'>
-              <label htmlFor='email'>
-                {texts['/contact-form'].labels.email}
-              </label>
-              <input
-                className='input input-contact'
-                type='email'
-                name='email'
-                id='email'
-                required
-              />
-            </div>
+              <div className='input-container'>
+                <label htmlFor='email'>
+                  {texts['/contact-form'].labels.email}
+                </label>
+                <input
+                  className='input input-contact'
+                  type='email'
+                  name='email'
+                  id='email'
+                  required
+                />
+              </div>
 
-            <div className='input-container'>
-              <label htmlFor='message'>
-                {texts['/contact-form'].labels.message}
-              </label>
-              <textarea
-                className='input input-contact'
-                name='message'
-                id='message'
-                required
-              />
-            </div>
+              <div className='input-container'>
+                <label htmlFor='message'>
+                  {texts['/contact-form'].labels.message}
+                </label>
+                <textarea
+                  className='input input-contact'
+                  name='message'
+                  id='message'
+                  required
+                />
+              </div>
 
-            <Button
-              type='submit'
-              classname='button-primary'
-              textbutton={texts['/contact-form'].button1}
-            />
-          </form>
+              {btnLoader ? (
+                <Miniloader />
+              ) : (
+                <Button
+                  type='submit'
+                  classname='button-primary'
+                  textbutton={texts['/contact-form'].button1}
+                />
+              )}
+            </form>
+          )}
           <div className='logo-container'>
             <img
               className='logo'

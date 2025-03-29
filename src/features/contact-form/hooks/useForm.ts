@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { transformData } from './form.dto';
 import { apiFormContact } from './api.services';
 
 const useForm = () => {
+  const [btnLoader, setBtnLoader] = useState(false);
   const [show, setShow] = useState(false);
+  const [formSend, setFormSend] = useState(false);
   const [title, setTitle] = useState('');
   const [modalMessage, setModalMessage] = useState('');
 
@@ -15,6 +17,7 @@ const useForm = () => {
     e: React.FormEvent<HTMLFormElement>
   ): Promise<void> => {
     e.preventDefault();
+    setBtnLoader(true);
 
     const formData = new FormData(e.currentTarget);
 
@@ -24,18 +27,36 @@ const useForm = () => {
       const response = await apiFormContact(parseData);
 
       console.log(response);
+
+      setFormSend(true);
+      setBtnLoader(false);
     } catch (error) {
       if (error instanceof Error) {
         setTitle('Ups!');
-        setModalMessage(error.message);
+        setModalMessage(
+          'Tuvimos un problema interno, intentalo de nuevo más tarde.'
+        );
         setShow(true);
+        setBtnLoader(false);
+        console.log(error.message);
       } else {
         setTitle('Ups!');
-        setModalMessage(error as string);
+        setModalMessage(
+          'Tuvimos un problema interno, intentalo de nuevo más tarde.'
+        );
+        setBtnLoader(false);
+        console.log(error);
         setShow(true);
       }
     }
   };
+
+  useEffect(() => {
+    return () => {
+      setBtnLoader(false);
+      setFormSend(false);
+    };
+  }, []);
 
   return {
     formSubmit,
@@ -43,6 +64,8 @@ const useForm = () => {
     title,
     modalMessage,
     show,
+    formSend,
+    btnLoader,
   };
 };
 

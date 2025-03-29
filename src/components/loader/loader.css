@@ -25,6 +25,21 @@
   animation-delay: 0.4s;
 }
 
+.miniloader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.minibar {
+  width: 7px;
+  height: 21px;
+  background-color: var(--btn-color-primary);
+  animation: gelatin 1.2s infinite ease-in-out;
+}
+
 @keyframes gelatin {
   0%,
   100% {

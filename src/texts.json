@@ -143,6 +143,7 @@
   "/contact-form": {
     "title": "Conectemos",
     "description": "Llena tus datos y me pondré en contacto contigo a la brevedad",
+    "text-form-succed": "Tu mensaje fue enviado!",
     "button1": "Enviar",
     "labels": {
       "name": "Nombre",

@@ -13,6 +13,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  gap: 3em;
   width: 100%;
 }
 
